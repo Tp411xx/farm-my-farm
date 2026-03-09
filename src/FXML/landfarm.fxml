@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="697.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LandFarm">
+
+   <children>
+      <GridPane fx:id="gridPane" layoutX="299.0" layoutY="85.0" prefHeight="580.0" prefWidth="735.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+       <ScrollPane fx:id="inventoryScroll" layoutX="81.0" layoutY="370.0" prefHeight="200" prefWidth="200">
+           <content>
+               <VBox fx:id="inventoryBox" spacing="10" />
+           </content>
+       </ScrollPane>
+      <ComboBox fx:id="seedSelector" layoutX="318.0" layoutY="29.0" prefHeight="47.0" prefWidth="200.0" promptText="Graine" />
+      <Label layoutX="91.0" layoutY="31.0" prefHeight="44.0" prefWidth="191.0" text="Argent">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font></Label>
+      <ScrollPane fx:id="inventoryScrollgraine" layoutX="79.0" layoutY="130.0" prefHeight="200" prefWidth="200">
+         <content>
+            <VBox fx:id="inventoryBoxgraine" spacing="10" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="inventoryScroll1" layoutX="1059.0" layoutY="363.0" prefHeight="200" prefWidth="200">
+         <content>
+            <VBox fx:id="inventoryBox1" spacing="10" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="inventoryScrollgraine1" layoutX="1059.0" layoutY="117.0" prefHeight="200" prefWidth="200">
+         <content>
+            <VBox fx:id="inventoryBoxgraine1" spacing="10" />
+         </content>
+      </ScrollPane>
+      <Label layoutX="1074.0" layoutY="26.0" prefHeight="53.0" prefWidth="166.0" text="Vente">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
