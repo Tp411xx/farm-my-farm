@@ -14,6 +14,12 @@ public class LandFarm {
     @FXML
     private VBox inventoryBox;
     @FXML
+    private VBox inventoryBoxgraine;
+    @FXML
+    private VBox marcketbuyBox;
+    @FXML
+    private VBox marcketsellBox;
+    @FXML
     private ComboBox<String> seedSelector;
 
     Inventory inventory;
@@ -28,7 +34,12 @@ public class LandFarm {
         seedSelector.getItems().addAll("Mais", "Patate","Aubergine","Fraise","Ble");
         seedSelector.setValue("Mais");
 
+
+        inventory = new Inventory(inventoryBoxgraine);
+        inventory = new Inventory(marcketbuyBox);
+        inventory = new Inventory(marcketsellBox);
         inventory = new Inventory(inventoryBox);
+
 
 
 
